@@ -1,1 +1,0 @@
-# touristwelcomepackrental.github.io

@@ -3,102 +3,209 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>touristwelcomepackrental</title>
+<title>Tourist Welcome Pack Rental</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#1f2937}
-header{background:linear-gradient(135deg,#0ea5a4,#0b7f7e);color:#fff;padding:60px 20px;text-align:center}
-header h1{font-size:3rem;margin:0 0 10px}
-header p{max-width:700px;margin:0 auto 20px;line-height:1.6}
-.btn{display:inline-block;background:#fff;color:#0b7f7e;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:bold}
-.container{max-width:1000px;margin:-20px auto 40px;padding:0 16px}
-.card{background:#fff;border-radius:22px;padding:24px;margin-bottom:18px;box-shadow:0 8px 20px rgba(0,0,0,.06)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-h2{color:#0b7f7e;margin-top:0}
-.item{border:1px solid #e5e7eb;border-radius:16px;padding:14px;margin-bottom:12px}
-.qr{text-align:center}
-.qr img{width:220px;height:220px;background:#fff;padding:14px;border-radius:20px;border:1px solid #e5e7eb}
-footer{text-align:center;color:#6b7280;padding:20px}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f4f7fb;
+  color:#1f2937;
+}
+header{
+  background:linear-gradient(135deg,#0ea5a4,#0b7f7e);
+  color:white;
+  padding:60px 20px;
+  text-align:center;
+}
+header h1{
+  font-size:3rem;
+  margin:0;
+}
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:20px;
+}
+.section{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  margin-bottom:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+h2{
+  color:#0b7f7e;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+.item{
+  border:1px solid #e5e7eb;
+  border-radius:15px;
+  padding:15px;
+}
+.price{
+  color:#059669;
+  font-weight:bold;
+}
+button{
+  background:#0ea5a4;
+  color:white;
+  border:none;
+  padding:10px 15px;
+  border-radius:10px;
+  cursor:pointer;
+  width:100%;
+}
+input, select, textarea{
+  width:100%;
+  padding:10px;
+  margin-bottom:12px;
+  border-radius:10px;
+  border:1px solid #d1d5db;
+}
+.step{
+  border-left:4px solid #0ea5a4;
+  padding-left:15px;
+  margin-bottom:15px;
+}
+footer{
+  text-align:center;
+  padding:20px;
+  color:#6b7280;
+}
 </style>
 </head>
 <body>
 
 <header>
-  <h1>touristwelcomepackrental</h1>
-  <p>
-    A convenient and eco-friendly rental service that provides tourists with essential travel items,
-    emergency information, local guidance, and easy return instructions in one welcome pack.
-  </p>
-  <a class="btn" href="#contact">Contact Us</a>
+  <h1>Tourist Welcome Pack Rental</h1>
+  <p>Book travel essentials, camping equipment, and emergency-ready rental items in one place.</p>
 </header>
 
 <div class="container">
 
-  <section class="card grid">
-    <div>
-      <h2>🎒 Travel Essentials</h2>
-      <p>Power bank, flashlight, towel, umbrella, toiletries, and useful tourist items.</p>
-    </div>
-    <div>
-      <h2>🆘 Emergency Ready</h2>
-      <p>Quick access to police, hospital, tourism office, and barangay hotlines.</p>
-    </div>
-    <div>
-      <h2>♻️ Easy Return</h2>
-      <p>Clear return instructions and online support for extensions or concerns.</p>
-    </div>
-  </section>
-
-  <section class="card">
+  <div class="section">
     <h2>About Our Business</h2>
     <p>
-      touristwelcomepackrental was created to help visitors enjoy Narra, Palawan with less stress
-      and more convenience. Instead of buying temporary travel items, tourists can rent a prepared
-      welcome pack that includes useful essentials and important local information.
+      Tourist Welcome Pack Rental is an eco-friendly rental service for visitors in Narra, Palawan.
+      We provide useful travel items such as power banks, towels, umbrellas, water bottles, and camping equipment.
+      Our goal is to make every tourist trip safer, easier, and more comfortable.
     </p>
-  </section>
+  </div>
 
-  <section class="card">
-    <h2>Scan QR Code</h2>
-    <div class="qr">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https://touristwelcomepackrental.example" alt="QR Code">
-    </div>
-    <p style="text-align:center">Scan this QR code to open the website instantly on any phone.</p>
-  </section>
-
-  <section class="card">
-    <h2>Emergency Contacts</h2>
+  <div class="section">
+    <h2>Book Our Rental Items</h2>
     <div class="grid">
-      <div class="item"><strong>👮 Narra Police Station</strong><br>0917-845-2211</div>
-      <div class="item"><strong>🏥 Palawan Community Hospital</strong><br>(048) 732-1188</div>
-      <div class="item"><strong>🏝️ Narra Tourism Office</strong><br>tourism.narra@gmail.com</div>
-      <div class="item"><strong>🏘️ Barangay Emergency Hotline</strong><br>0968-552-4403</div>
-    </div>
-  </section>
 
-  <section class="card">
-    <h2>Return Instructions</h2>
-    <ol>
-      <li>Check all items before returning the pack.</li>
-      <li>Return before 5:00 PM unless an extension is approved.</li>
-      <li>Message us through Facebook or phone for extensions.</li>
-      <li>Wait for the return confirmation from our staff.</li>
-    </ol>
-  </section>
+      <div class="item">
+        <h3>Travel Essentials Pack</h3>
+        <p>Towel, umbrella, flashlight, toiletries, and emergency card.</p>
+        <p class="price">₱120/day</p>
+        <button>Rent Now</button>
+      </div>
 
-  <section class="card" id="contact">
-    <h2>Contact Us Online</h2>
-    <div class="grid">
-      <div class="item"><strong>📘 Facebook</strong><br>@touristwelcomepackrental</div>
-      <div class="item"><strong>💬 Messenger</strong><br>m.me/touristwelcomepackrental</div>
-      <div class="item"><strong>📞 Phone</strong><br>0919-334-7788</div>
-      <div class="item"><strong>✉️ Email</strong><br>touristwelcomepackrental@gmail.com</div>
+      <div class="item">
+        <h3>Power Bank</h3>
+        <p>10,000mAh portable charger for phones and small devices.</p>
+        <p class="price">₱50/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="item">
+        <h3>Camping Set</h3>
+        <p>Portable light, utensils, mat, and outdoor essentials.</p>
+        <p class="price">₱180/day</p>
+        <button>Rent Now</button>
+      </div>
+
+      <div class="item">
+        <h3>Umbrella</h3>
+        <p>Rain and sun protection for tours and beach trips.</p>
+        <p class="price">₱30/day</p>
+        <button>Rent Now</button>
+      </div>
+
     </div>
-  </section>
+  </div>
+
+  <div class="section">
+    <h2>Booking Form</h2>
+
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
+    <input type="tel" placeholder="Phone Number">
+
+    <select>
+      <option>Choose an Item</option>
+      <option>Travel Essentials Pack</option>
+      <option>Power Bank</option>
+      <option>Camping Set</option>
+      <option>Umbrella</option>
+    </select>
+
+    <input type="date">
+
+    <select>
+      <option>Rental Duration</option>
+      <option>1 Day</option>
+      <option>2 Days</option>
+      <option>3 Days</option>
+      <option>1 Week</option>
+    </select>
+
+    <textarea rows="4" placeholder="Additional requests or delivery location"></textarea>
+
+    <button onclick="alert('Booking submitted! We will contact you soon.')">Submit Booking</button>
+  </div>
+
+  <div class="section">
+    <h2>Emergency Information</h2>
+    <p><b>Police:</b> 0917-845-2211</p>
+    <p><b>Hospital:</b> (048) 732-1188</p>
+    <p><b>Tourism Office:</b> tourism.narra@gmail.com</p>
+    <p><b>Barangay Hotline:</b> 0968-552-4403</p>
+  </div>
+
+  <div class="section">
+    <h2>Item Return Procedure</h2>
+
+    <div class="step">
+      <b>Step 1:</b> Check all rented items before returning.
+    </div>
+
+    <div class="step">
+      <b>Step 2:</b> Return the items before 5:00 PM on the agreed date.
+    </div>
+
+    <div class="step">
+      <b>Step 3:</b> Contact us immediately if you need an extension.
+    </div>
+
+    <div class="step">
+      <b>Step 4:</b> Our staff will inspect the items and confirm completion.
+    </div>
+
+    <div class="step">
+      <b>Step 5:</b> Receive return confirmation through Messenger, SMS, or email.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Contact Information</h2>
+    <p><b>Facebook:</b> @TouristWelcomePackRental</p>
+    <p><b>Messenger:</b> m.me/TouristWelcomePackRental</p>
+    <p><b>Phone:</b> 0919-334-7788</p>
+    <p><b>Email:</b> touristwelcomepackrental@gmail.com</p>
+    <p><b>Location:</b> Narra, Palawan, Philippines</p>
+  </div>
 
 </div>
 
 <footer>
-  © 2026 touristwelcomepackrental • Narra, Palawan • Eco-friendly tourism support
+  © 2026 Tourist Welcome Pack Rental • Narra, Palawan
 </footer>
 
 </body>
